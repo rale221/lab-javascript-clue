@@ -108,11 +108,19 @@ function pickMystery() {
     let mystery = {}
     mystery.supect = selectrandom(suspectsArray)
     mystery.room = selectrandom(roomsArray)
-    mystery.wapon = selectrandom(weaponsArray)
+    mystery.weapon = selectrandom(weaponsArray)
     return mystery
 }
-console.log(mystery.suspectsArray)
+
 
 
 
 // ITERATION 3
+
+
+function revealMystery(mystery) {
+
+    console.log(mystery)
+    return `${mystery.suspect.first_name} ${mystery.suspectsArray.last_name} "killed Mr. Boddy using the" ${mystery.weapon.name} in the ${mystery.room.name}!`
+
+}
