@@ -94,7 +94,7 @@ const weaponsArray = [
 
 
 // ITERATION 2
-console.log(weaponsArray[0].name)
+
 
 function selectrandom(arr) {
     if (arr.length === 0) {
@@ -102,6 +102,16 @@ function selectrandom(arr) {
     }
     return arr[Math.floor(Math.random() * arr.length)]
 }
+
+function pickMystery() {
+
+    let mystery = {}
+    mystery.supect = selectrandom(suspectsArray)
+    mystery.room = selectrandom(roomsArray)
+    mystery.wapon = selectrandom(weaponsArray)
+    return mystery
+}
+console.log(mystery.suspectsArray)
 
 
 
